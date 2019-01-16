@@ -3,19 +3,20 @@ package com.sinoyd.artifact.controller;
 import com.sinoyd.artifact.entity.ConsumableDetail;
 import com.sinoyd.artifact.result.ResultBean;
 import com.sinoyd.artifact.service.ConsumableDetailService;
+import com.sinoyd.frame.base.controller.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
 /**
- * @Description
+ * @Description 消耗品新增详情控制类 只有新增以及根据消耗品id搜索的条件
  * @auther 李忠杰
  * @create 2019-01-15 16:29
  */
 @RestController
-@RequestMapping("/api/consumable/detail")
-public class ConsumableDetailController {
+@RequestMapping("/api/bas/consumable/detail")
+public class ConsumableDetailController extends BaseController {
     @Autowired
     private ConsumableDetailService consumableDetailService;
 

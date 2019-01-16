@@ -1,8 +1,12 @@
 package com.sinoyd.artifact.controller;
 
+import com.sinoyd.artifact.criteria.ConsumableBaseInfoAndStorageViewCriteria;
 import com.sinoyd.artifact.entity.ConsumableBase;
 import com.sinoyd.artifact.result.ResultBean;
 import com.sinoyd.artifact.service.ConsumableBaseService;
+import com.sinoyd.frame.base.controller.BaseController;
+import com.sinoyd.frame.base.repository.CommonRepository;
+import com.sinoyd.frame.base.util.PageBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.sinoyd.artifact.result.ResultBean;
@@ -18,8 +22,8 @@ import java.util.List;
  * @create 2019-01-15 14:15
  */
 @RestController
-@RequestMapping("/api/consumable/baseInfo")
-public class ConsumableBaseController {
+@RequestMapping("/api/bas/consumable/baseInfo")
+public class ConsumableBaseController extends BaseController{
     @Autowired
     private ConsumableBaseService consumableBaseService;
 
@@ -29,9 +33,11 @@ public class ConsumableBaseController {
         return ResultBean.success();
     }
 
-    @GetMapping("/{id}")
-    public Object find(@PathVariable("id") Integer id){
-        return ResultBean.success(consumableBaseService.find(id));
+    @GetMapping("")
+    public Object getByPage(ConsumableBaseInfoAndStorageViewCriteria criteria){
+        PageBean pageBean = super.getPageBean();
+        consumableBaseService.getByPage(pageBean,criteria);
+        return super.setJsonPaginationMap(pageBean);
     }
 
     @DeleteMapping("")
@@ -47,16 +53,16 @@ public class ConsumableBaseController {
 
     @ExceptionHandler
     public Object nullPointerExceptionHandler(NullPointerException e){
-        return ResultBean.error(-99,"发生了空指针错误,请联系管理员进行设置");
+        return ResultBean.error(-99,e.getMessage());
     }
 
     @ExceptionHandler
     public Object illegalArgumentExceptionHandler(IllegalArgumentException e){
-        return ResultBean.error(1,"输入错误 更新时未输入消耗品id");
+        return ResultBean.error(1,e.getMessage());
     }
 
     @ExceptionHandler
     public Object sqlException(SQLException e){
-        return ResultBean.error(1,"输入错误 枚举值输入错误");
+        return ResultBean.error(1,e.getMessage());
     }
 }

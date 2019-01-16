@@ -1,13 +1,19 @@
 package com.sinoyd.artifact.service;
 
 import com.sinoyd.artifact.entity.ConsumableBase;
+import com.sinoyd.artifact.entity.Storage;
 import com.sinoyd.artifact.repository.ConsumableBaseRepository;
+import com.sinoyd.artifact.repository.StorageRepository;
+import com.sinoyd.frame.base.repository.CommonRepository;
+import com.sinoyd.frame.base.util.BaseCriteria;
+import com.sinoyd.frame.base.util.PageBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.beans.Transient;
 import java.util.Collection;
+
 
 /**
  * @Description
@@ -19,24 +25,59 @@ public class ConsumableBaseService {
     @Autowired
     private ConsumableBaseRepository consumableBaseRepository;
 
-    public void save(ConsumableBase baseInfo){
+    @Autowired
+    private StorageRepository storageRepository;
 
-        consumableBaseRepository.save(baseInfo);
-    }
+    @Autowired
+    private CommonRepository commonRepository;
 
-    public ConsumableBase find(Integer id){
-        return consumableBaseRepository.findOne(id);
-    }
-
+    /**
+     * 新增一条基础信息时 同时要在库存表中新增一条库存信息 起始库存为0
+     *
+     * @param baseInfo 要新增的基础信息
+     */
     @Transactional
-    public Integer delete(Collection<Integer> ids){
+    public void save(ConsumableBase baseInfo) {
+        Integer baseId = consumableBaseRepository.save(baseInfo).getId();
+        Integer warningNum = baseInfo.getWarningNum();
+        if (warningNum >= 0) {
+            storageRepository.save(new Storage(baseId, 0, 1));
+        } else {
+            throw new IllegalArgumentException("输入错误 输入小于0的警告数量");
+        }
+    }
+
+    /**
+     * 分页搜索与模糊检索 搜索相关基础信息以及库存信息 同时库存量低于报警值时进行报警
+     *
+     * @param pageBean
+     * @param consumableBaseInfoAndStorageCriteria
+     */
+    public void getByPage(PageBean pageBean, BaseCriteria consumableBaseInfoAndStorageCriteria) {
+        pageBean.setEntityName("ConsumableBaseInfoAndStorageView a");
+        pageBean.setSelect("Select a");
+        commonRepository.findByPage(pageBean, consumableBaseInfoAndStorageCriteria);
+    }
+
+    /**
+     * 删除一条基础信息时 同时要删除库存表中对应的库存信息
+     *
+     * @param ids 要删除的基础信息id
+     * @return
+     */
+    @Transactional
+    public Integer delete(Collection<Integer> ids) {
+        if(ids==null||ids.size()==0){
+            throw new NullPointerException("输入错误 传入数组为空");
+        }
+        storageRepository.deleteAllByConsumablesIdIn(ids);
         return consumableBaseRepository.deleteAllByIdIn(ids);
     }
 
     @Transactional
-    public void update(ConsumableBase baseInfo){
-        if(baseInfo.getId()==null){
-            throw new IllegalArgumentException();
+    public void update(ConsumableBase baseInfo) {
+        if (baseInfo.getId() == null) {
+            throw new IllegalArgumentException("输入错误 更新时未输入id值");
         }
         consumableBaseRepository.save(baseInfo);
     }

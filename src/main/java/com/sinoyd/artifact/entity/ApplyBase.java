@@ -21,9 +21,10 @@ public class ApplyBase {
     private Integer id;
     @Column(nullable = false)
     private String applyPerson;
+    private String permitPerson;
     @Column(nullable = false)
     private Date applyDate;
     @Column(nullable = false)
-    private String state;
+    private String state;   //enum('审核新建','正在审核','审核通过','审核未通过')
     private String comment;
 }

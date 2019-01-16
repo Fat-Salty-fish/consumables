@@ -1,35 +1,31 @@
-package com.sinoyd.artifact.entity;
+package com.sinoyd.artifact.view;
 
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * @Description
  * @auther 李忠杰
- * @create 2019-01-15 11:41
+ * @create 2019-01-16 15:00
  */
-
-@Table(name = "t_consumables_base_info")
 @Entity
-@Getter
+@Table(name = "v_consumable_base_info_and_store")
 @Setter
-public class ConsumableBase {
+@Getter
+public class ConsumableBaseInfoAndStorageView{
     @Id
-    @GeneratedValue
     private Integer id;
-    @Column(nullable = false)
     private String name;
     private String code;
     private String size;
     private String unit;
     private String level;       //enum('色谱标准','指定级','GC色谱纯','环保试剂','HPLC')
-    @Column(nullable = false)
     private String type;        //enum('高纯物质','生物染色剂','色谱纯试剂','仪器设备','光谱纯试剂')
-    @Column(nullable = false)
     private Integer warningNum;
-    @Column(nullable = false)
     private String warningPerson;//enum('薛宇昊','刘伯健','李森','浦小军','孙小峰','程玉明')
     private String aliasName;
     private Boolean easyToProduceDrug;
@@ -37,8 +33,6 @@ public class ConsumableBase {
     private String safetyInstruction;
     private String remark;
 
-    @Transient
     private Integer store;
-    @Transient
-    private Boolean isLessThan;
+    private Integer isLessThan;
 }

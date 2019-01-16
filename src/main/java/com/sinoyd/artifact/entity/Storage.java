@@ -22,4 +22,16 @@ public class Storage {
     private Integer consumablesId;
     @Column(nullable = false)
     private Integer store;
+    @Column(nullable = false)
+    private Integer isLessThan;
+
+    public Storage(){}
+
+    public Storage(Integer consumablesId,Integer store,Integer isLessThan){
+        this.consumablesId = consumablesId;
+        this.store = store;
+        this.isLessThan = isLessThan;
+    }
+
+
 }
