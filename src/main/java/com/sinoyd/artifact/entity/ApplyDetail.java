@@ -19,11 +19,11 @@ public class ApplyDetail {
     @GeneratedValue
     private Integer id;
     @Column(nullable = false)
-    private Integer applyId;
+    private Integer applyId;                //绑定的领用单基础表id
     @Column(nullable = false)
-    private Integer consumablesDetailsId;
+    private Integer consumablesDetailsId;   //绑定的消耗品详情id
     @Column(nullable = false)
-    private Integer applyNum;
-    private String purpose;
-    private String remark;
+    private Integer applyNum;               //领用的数量
+    private String purpose;                 //领用目的
+    private String remark;                  //备注
 }

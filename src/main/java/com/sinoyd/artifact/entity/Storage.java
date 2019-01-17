@@ -19,11 +19,11 @@ public class Storage {
     @GeneratedValue
     private Integer id;
     @Column(nullable = false)
-    private Integer consumablesId;
+    private Integer consumablesId;      //绑定的消耗品id
     @Column(nullable = false)
-    private Integer store;
+    private Integer store;              //总库存
     @Column(nullable = false)
-    private Integer isLessThan;
+    private Integer isLessThan;         //现有库存数是否低于警报值
 
     public Storage(){}
 
@@ -33,5 +33,15 @@ public class Storage {
         this.isLessThan = isLessThan;
     }
 
-
+    public static Integer isLessThan(Integer storeNum,Integer warningNum){
+        if(storeNum==null||warningNum==null){
+            return 1;
+        }
+        if(storeNum>warningNum){
+            return 0;
+        }
+        else {
+            return 1;
+        }
+    }
 }

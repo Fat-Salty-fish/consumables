@@ -41,10 +41,17 @@ public class ConsumableBaseService {
         Integer baseId = consumableBaseRepository.save(baseInfo).getId();
         Integer warningNum = baseInfo.getWarningNum();
         if (warningNum >= 0) {
-            storageRepository.save(new Storage(baseId, 0, 1));
+            storageRepository.save(new Storage(baseId, 0, Storage.isLessThan(0,baseInfo.getWarningNum())));
         } else {
             throw new IllegalArgumentException("输入错误 输入小于0的警告数量");
         }
+    }
+
+    public ConsumableBase findById(Integer id){
+        if (id == null) {
+            throw new IllegalArgumentException("输入错误 输入的消耗品id为空");
+        }
+        return consumableBaseRepository.findOne(id);
     }
 
     /**
@@ -53,7 +60,7 @@ public class ConsumableBaseService {
      * @param pageBean
      * @param consumableBaseInfoAndStorageCriteria
      */
-    public void getByPage(PageBean pageBean, BaseCriteria consumableBaseInfoAndStorageCriteria) {
+    public void findByPage(PageBean pageBean, BaseCriteria consumableBaseInfoAndStorageCriteria) {
         pageBean.setEntityName("ConsumableBaseInfoAndStorageView a");
         pageBean.setSelect("Select a");
         commonRepository.findByPage(pageBean, consumableBaseInfoAndStorageCriteria);
@@ -67,19 +74,27 @@ public class ConsumableBaseService {
      */
     @Transactional
     public Integer delete(Collection<Integer> ids) {
-        if(ids==null||ids.size()==0){
+        if (ids == null || ids.size() == 0) {
             throw new NullPointerException("输入错误 传入数组为空");
         }
         storageRepository.deleteAllByConsumablesIdIn(ids);
         return consumableBaseRepository.deleteAllByIdIn(ids);
     }
 
+    /**
+     * 更新相关的消耗品id信息
+     *
+     * @param baseInfo
+     */
     @Transactional
     public void update(ConsumableBase baseInfo) {
         if (baseInfo.getId() == null) {
             throw new IllegalArgumentException("输入错误 更新时未输入id值");
         }
         consumableBaseRepository.save(baseInfo);
+        Storage storage = storageRepository.findByConsumablesId(baseInfo.getId());
+        storage.setIsLessThan(Storage.isLessThan(storage.getStore(),baseInfo.getWarningNum()));
+        storageRepository.save(storage);
     }
 
 }

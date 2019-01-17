@@ -1,5 +1,6 @@
 package com.sinoyd.artifact.controller;
 
+import com.mysql.jdbc.exceptions.MySQLIntegrityConstraintViolationException;
 import com.sinoyd.artifact.criteria.ConsumableBaseInfoAndStorageViewCriteria;
 import com.sinoyd.artifact.entity.ConsumableBase;
 import com.sinoyd.artifact.result.ResultBean;
@@ -27,42 +28,58 @@ public class ConsumableBaseController extends BaseController{
     @Autowired
     private ConsumableBaseService consumableBaseService;
 
+    /**
+     * 新增消耗品基础信息
+     * @param baseInfo 消耗品信息
+     * @return 返回插入成功 不反悔消耗品信息数据 为插入成功
+     */
     @PostMapping("")
-    public Object save(@RequestBody ConsumableBase baseInfo){
+    public Object create(@RequestBody ConsumableBase baseInfo){
         consumableBaseService.save(baseInfo);
         return ResultBean.success();
     }
 
+    /**
+     * 消耗品基础信息分页搜索
+     * @param criteria 查询信息
+     * @return 返回查询结果
+     */
     @GetMapping("")
-    public Object getByPage(ConsumableBaseInfoAndStorageViewCriteria criteria){
+    public Object findByPage(ConsumableBaseInfoAndStorageViewCriteria criteria){
         PageBean pageBean = super.getPageBean();
-        consumableBaseService.getByPage(pageBean,criteria);
+        consumableBaseService.findByPage(pageBean,criteria);
         return super.setJsonPaginationMap(pageBean);
     }
 
+    /**
+     * 根据id搜索单条消耗品基础信息
+     * @param id
+     * @return
+     */
+    @GetMapping("/{id}")
+    public Object findById(@PathVariable("id")Integer id){
+        return ResultBean.success(consumableBaseService.findById(id));
+    }
+
+    /**
+     * 删除消耗品基础信息
+     * @param ids 要删除的消耗品基础信息
+     * @return 返回删除的条数
+     */
     @DeleteMapping("")
     public Object delete(@RequestBody Collection<Integer> ids){
         return ResultBean.success(consumableBaseService.delete(ids));
     }
 
+    /**
+     * 更新基础信息
+     * @param baseInfo 基础信息 id不能为空
+     * @return 不返回数据即认为修改成功
+     */
     @PutMapping("")
     public Object update(@RequestBody ConsumableBase baseInfo){
         consumableBaseService.update(baseInfo);
         return ResultBean.success();
     }
 
-    @ExceptionHandler
-    public Object nullPointerExceptionHandler(NullPointerException e){
-        return ResultBean.error(-99,e.getMessage());
-    }
-
-    @ExceptionHandler
-    public Object illegalArgumentExceptionHandler(IllegalArgumentException e){
-        return ResultBean.error(1,e.getMessage());
-    }
-
-    @ExceptionHandler
-    public Object sqlException(SQLException e){
-        return ResultBean.error(1,e.getMessage());
-    }
 }

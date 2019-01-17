@@ -1,5 +1,6 @@
 package com.sinoyd.artifact.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Cleanup;
 import lombok.Getter;
 import lombok.Setter;
@@ -28,13 +29,16 @@ public class ConsumableDetail {
     private Integer currentNum;    //现有个数
     @Column(nullable = false)
     private String batchNumber;    //生产编号
+    @JsonFormat(pattern = "yyyy-MM-dd")
     @Column(nullable = false)
     private Date dateInStorage;    //入库时间
     private String manufacturer;   //制造商
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date validity;         //有效期截止日
     private String dealer;         //经销商
     @Column(nullable = false)
     private String acceptPerson;//enum('薛宇昊','刘伯健','李森','浦小军','孙小峰','程玉明')
+    @JsonFormat(pattern = "yyyy-MM-dd")
     @Column(nullable = false)
     private Date acceptTime;       //接收日期
     @Column(nullable = false)

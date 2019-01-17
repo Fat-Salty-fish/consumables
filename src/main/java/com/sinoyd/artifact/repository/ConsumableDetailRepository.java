@@ -11,7 +11,5 @@ import java.util.Collection;
  * @create 2019-01-15 14:08
  */
 public interface ConsumableDetailRepository extends CrudRepository<ConsumableDetail,Integer> {
-    Integer deleteAllByIdIn(Collection<Integer> ids);
-
     Collection<ConsumableDetail> findByConsumablesId(Integer id);
 }

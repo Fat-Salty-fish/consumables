@@ -1,5 +1,6 @@
 package com.sinoyd.artifact.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -24,6 +25,7 @@ public class UsingRecord {
     @Column(nullable = false)
     private Integer detailsId;
     @Column(nullable = false)
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date dateToUsing;
     @Column(nullable = false)
     private Integer usingNum;

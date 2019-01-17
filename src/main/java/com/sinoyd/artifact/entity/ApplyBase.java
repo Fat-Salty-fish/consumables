@@ -1,5 +1,6 @@
 package com.sinoyd.artifact.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -20,11 +21,15 @@ public class ApplyBase {
     @GeneratedValue
     private Integer id;
     @Column(nullable = false)
-    private String applyPerson;
-    private String permitPerson;
+    private String applyPerson;         //申请人
     @Column(nullable = false)
-    private Date applyDate;
+    private String permitPerson;        //发料人 enum('薛宇昊','刘伯健','李森','浦小军','孙小峰','程玉明')
     @Column(nullable = false)
-    private String state;   //enum('审核新建','正在审核','审核通过','审核未通过')
-    private String comment;
+    private String checkPerson;         //审核人 enum('薛宇昊','刘伯健','李森','浦小军','孙小峰','程玉明')
+    @Column(nullable = false)
+    @JsonFormat(pattern = "yyyy-MM-dd")
+    private Date applyDate;             //申请时间
+    @Column(nullable = false)
+    private String state;               //enum('申请新建','不发料','申请提交','审核通过','已发料')
+    private String comment;             //评审意见
 }

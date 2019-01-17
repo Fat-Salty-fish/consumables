@@ -1,13 +1,14 @@
 package com.sinoyd.artifact.controller;
 
+import com.sinoyd.artifact.criteria.ConsumableDetailInfoCriteria;
 import com.sinoyd.artifact.entity.ConsumableDetail;
 import com.sinoyd.artifact.result.ResultBean;
 import com.sinoyd.artifact.service.ConsumableDetailService;
 import com.sinoyd.frame.base.controller.BaseController;
+import com.sinoyd.frame.base.util.PageBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Collection;
 
 /**
  * @Description 消耗品新增详情控制类 只有新增以及根据消耗品id搜索的条件
@@ -26,23 +27,21 @@ public class ConsumableDetailController extends BaseController {
      * @return 返回基本操作信息
      */
     @PostMapping("")
-    public Object save(@RequestBody ConsumableDetail detailInfo){
+    public Object create(@RequestBody ConsumableDetail detailInfo){
         consumableDetailService.save(detailInfo);
         return ResultBean.success();
     }
 
     /**
      * 根据消耗品的id来搜索详细信息
-     * @param id 消耗品id 注意不是详细信息的id
+     * @param criteria 分页搜索的信息 须要有关联的消耗品id
      * @return 返回详细信息的对象数组
      */
-    @GetMapping("/{id}")
-    public Object find(@PathVariable("id") Integer id){
-        return ResultBean.success(consumableDetailService.find(id));
+    @GetMapping("")
+    public Object find(ConsumableDetailInfoCriteria criteria){
+        PageBean pageBean = super.getPageBean();
+        consumableDetailService.findByPage(pageBean,criteria);
+        return super.setJsonPaginationMap(pageBean);
     }
 
-    @ExceptionHandler
-    public Object illegalArgumentExceptionHandler(IllegalArgumentException e){
-        return ResultBean.error(1,e.getMessage());
-    }
 }

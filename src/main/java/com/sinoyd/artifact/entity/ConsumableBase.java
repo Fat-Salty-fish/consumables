@@ -32,7 +32,7 @@ public class ConsumableBase {
     @Column(nullable = false)
     private String warningPerson;//enum('薛宇昊','刘伯健','李森','浦小军','孙小峰','程玉明')
     private String aliasName;
-    private Boolean easyToProduceDrug;
+    private Integer easyToProduceDrug;
     private String savingConditions;
     private String safetyInstruction;
     private String remark;
