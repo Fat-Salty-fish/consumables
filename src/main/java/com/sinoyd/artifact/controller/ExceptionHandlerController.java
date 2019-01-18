@@ -3,6 +3,7 @@ package com.sinoyd.artifact.controller;
 import com.sinoyd.artifact.result.ResultBean;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.sql.SQLException;
 import java.text.ParseException;
@@ -21,6 +22,7 @@ public class ExceptionHandlerController  {
      * @return
      */
     @ExceptionHandler
+    @ResponseBody
     public Object nullPointerExceptionHandler(NullPointerException e){
         return ResultBean.error(1,e.getMessage());
     }
@@ -31,6 +33,7 @@ public class ExceptionHandlerController  {
      * @return
      */
     @ExceptionHandler
+    @ResponseBody
     public Object illegalArgumentExceptionHandler(IllegalArgumentException e){
         return ResultBean.error(1,e.getMessage());
     }
@@ -41,11 +44,13 @@ public class ExceptionHandlerController  {
      * @return
      */
     @ExceptionHandler
+    @ResponseBody
     public Object sqlException(SQLException e){
         return ResultBean.error(1,e.getMessage());
     }
 
     @ExceptionHandler
+    @ResponseBody
     public Object ParseException(ParseException e){
         return ResultBean.error(2,"输入时间格式错误");
     }

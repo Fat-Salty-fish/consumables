@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.text.ParseException;
+import java.util.Collection;
 
 /**
  * @Description
@@ -61,5 +62,21 @@ public class ApplyBaseController extends BaseController {
     @GetMapping("/{id}")
     public Object findById(@PathVariable("id")Integer id){
         return ResultBean.success(applyBaseService.findById(id));
+    }
+
+    /**
+     * 删除基础申请信息
+     * @param ids 要删除的基础申请信息id 多个id
+     * @return
+     */
+    @DeleteMapping("")
+    public Object delete(@RequestBody Collection<Integer> ids){
+        return ResultBean.success(applyBaseService.delete(ids));
+    }
+
+    @PutMapping("")
+    public Object update(@RequestBody ApplyBase baseInfo){
+        applyBaseService.update(baseInfo);
+        return ResultBean.success();
     }
 }

@@ -22,9 +22,9 @@ public class ApplyBase {
     private Integer id;
     @Column(nullable = false)
     private String applyPerson;         //申请人
-    @Column(nullable = false)
+
     private String permitPerson;        //发料人 enum('薛宇昊','刘伯健','李森','浦小军','孙小峰','程玉明')
-    @Column(nullable = false)
+
     private String checkPerson;         //审核人 enum('薛宇昊','刘伯健','李森','浦小军','孙小峰','程玉明')
     @Column(nullable = false)
     @JsonFormat(pattern = "yyyy-MM-dd")

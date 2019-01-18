@@ -1,7 +1,9 @@
 package com.sinoyd.artifact.service;
 
 import com.sinoyd.artifact.entity.ApplyBase;
+import com.sinoyd.artifact.entity.ApplyDetail;
 import com.sinoyd.artifact.repository.ApplyBaseRepository;
+import com.sinoyd.artifact.repository.ApplyDetailRepository;
 import com.sinoyd.frame.base.repository.CommonRepository;
 import com.sinoyd.frame.base.util.BaseCriteria;
 import com.sinoyd.frame.base.util.PageBean;
@@ -24,11 +26,15 @@ public class ApplyBaseService {
     @Autowired
     private CommonRepository commonRepository;
 
+    @Autowired
+    private ApplyDetailRepository applyDetailRepository;
+
     /**
      * 保存申请基础信息 无关联其他表
      * @param baseInfo
      */
     public void save(ApplyBase baseInfo){
+        baseInfo.setState("申请新建");
         applyBaseRepository.save(baseInfo);
     }
 
@@ -62,7 +68,10 @@ public class ApplyBaseService {
      */
     @Transactional
     public Integer delete(Collection<Integer> ids){
-        return null;
+        if(ids==null||ids.size()==0){
+            throw new NullPointerException("输入错误 传入数组为空");
+        }
+        return applyBaseRepository.deleteAllByIdIn(ids);
     }
 
     /**
@@ -71,8 +80,9 @@ public class ApplyBaseService {
      */
     @Transactional
     public void update(ApplyBase baseInfo){
-
+        if(baseInfo.getId()==null){
+            throw new IllegalArgumentException("输入错误 更新时未输入id值");
+        }
+        applyBaseRepository.save(baseInfo);
     }
-
-
 }

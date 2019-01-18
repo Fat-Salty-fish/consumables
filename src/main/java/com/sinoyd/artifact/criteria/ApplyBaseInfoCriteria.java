@@ -22,9 +22,9 @@ import java.util.Date;
 public class ApplyBaseInfoCriteria extends BaseCriteria {
     private String applyPerson;
     private String state;
-    @JsonFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd",locale = "GMT+8")
     private Date startDate;
-    @JsonFormat(pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd",locale = "GMT+8")
     private Date endDate;
 
     public ApplyBaseInfoCriteria(){ }
@@ -37,10 +37,10 @@ public class ApplyBaseInfoCriteria extends BaseCriteria {
             this.state = state;
         }
         SimpleDateFormat simpleDateFormat= new SimpleDateFormat("yyyy-MM-dd");
-        if(startDate!=null){
+        if(StringUtils.isNotNullAndEmpty(startDate)){
             this.startDate = simpleDateFormat.parse(startDate);
         }
-        if(endDate!=null){
+        if(StringUtils.isNotNullAndEmpty(endDate)){
             this.endDate = simpleDateFormat.parse(endDate);
         }
     }
@@ -58,11 +58,11 @@ public class ApplyBaseInfoCriteria extends BaseCriteria {
             values.put("state",this.state);
         }
         if(StringUtils.isNotNullAndEmpty(this.startDate)){
-            condition.append("and applyDate > :startDate ");
+            condition.append("and applyDate >= :startDate ");
             values.put("startDate",this.startDate);
         }
         if(StringUtils.isNotNullAndEmpty(this.endDate)){
-            condition.append("and applyDate < :endDate ");
+            condition.append("and applyDate <= :endDate ");
             values.put("endDate",this.endDate);
         }
         return condition.toString();

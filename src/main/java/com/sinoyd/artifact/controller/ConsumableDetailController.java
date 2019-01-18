@@ -1,6 +1,6 @@
 package com.sinoyd.artifact.controller;
 
-import com.sinoyd.artifact.criteria.ConsumableDetailInfoCriteria;
+import com.sinoyd.artifact.criteria.ConsumableBaseAndDetailInfoViewCriteria;
 import com.sinoyd.artifact.entity.ConsumableDetail;
 import com.sinoyd.artifact.result.ResultBean;
 import com.sinoyd.artifact.service.ConsumableDetailService;
@@ -28,6 +28,7 @@ public class ConsumableDetailController extends BaseController {
      */
     @PostMapping("")
     public Object create(@RequestBody ConsumableDetail detailInfo){
+        System.out.println(detailInfo.getValidity());
         consumableDetailService.save(detailInfo);
         return ResultBean.success();
     }
@@ -38,7 +39,7 @@ public class ConsumableDetailController extends BaseController {
      * @return 返回详细信息的对象数组
      */
     @GetMapping("")
-    public Object find(ConsumableDetailInfoCriteria criteria){
+    public Object find(ConsumableBaseAndDetailInfoViewCriteria criteria){
         PageBean pageBean = super.getPageBean();
         consumableDetailService.findByPage(pageBean,criteria);
         return super.setJsonPaginationMap(pageBean);

@@ -21,7 +21,7 @@ public class ApplyDetail {
     @Column(nullable = false)
     private Integer applyId;                //绑定的领用单基础表id
     @Column(nullable = false)
-    private Integer consumablesDetailsId;   //绑定的消耗品详情id
+    private Integer consumablesId;          //绑定的消耗品id
     @Column(nullable = false)
     private Integer applyNum;               //领用的数量
     private String purpose;                 //领用目的

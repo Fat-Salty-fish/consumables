@@ -4,6 +4,7 @@ import com.sinoyd.artifact.entity.ConsumableBase;
 import com.sinoyd.artifact.entity.Storage;
 import com.sinoyd.artifact.repository.ConsumableBaseRepository;
 import com.sinoyd.artifact.repository.StorageRepository;
+import com.sinoyd.artifact.view.StoreView;
 import com.sinoyd.frame.base.repository.CommonRepository;
 import com.sinoyd.frame.base.util.BaseCriteria;
 import com.sinoyd.frame.base.util.PageBean;
@@ -12,7 +13,9 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.beans.Transient;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
 
 
 /**
@@ -58,12 +61,15 @@ public class ConsumableBaseService {
      * 分页搜索与模糊检索 搜索相关基础信息以及库存信息 同时库存量低于报警值时进行报警
      *
      * @param pageBean
-     * @param consumableBaseInfoAndStorageCriteria
+     * @param storeViewCriteria
      */
-    public void findByPage(PageBean pageBean, BaseCriteria consumableBaseInfoAndStorageCriteria) {
-        pageBean.setEntityName("ConsumableBaseInfoAndStorageView a");
+    public void findByPage(PageBean pageBean, BaseCriteria storeViewCriteria) {
+        pageBean.setEntityName("StoreView a");
         pageBean.setSelect("Select a");
-        commonRepository.findByPage(pageBean, consumableBaseInfoAndStorageCriteria);
+        commonRepository.findByPage(pageBean,storeViewCriteria);
+        List<StoreView> viewList = pageBean.getData();
+        viewList.stream().forEach(item->{
+        });
     }
 
     /**
