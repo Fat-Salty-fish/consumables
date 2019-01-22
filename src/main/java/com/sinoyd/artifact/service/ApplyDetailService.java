@@ -16,12 +16,14 @@ import com.sinoyd.frame.base.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;
+import javax.validation.constraints.Null;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import static java.util.stream.Collectors.summingInt;
 import static java.util.stream.Collectors.toList;
 
 /**
@@ -48,20 +50,52 @@ public class ApplyDetailService {
 
     /**
      * 保存申请详细信息 在已经有申请基础信息的前提下 将详细信息保存
+     * 在保存申请的时候进行预申请计算 如果预申请的数量大于已经被预申请的数量 则预申请失败 申请驳回
+     * 反之申请成功
      * @param detailsInfo
      */
     @Transactional
     public void create(Map<String,Object> detailsInfo){
         Integer applyId = (Integer) detailsInfo.get("applyId");
         if(applyId == null){
-            throw new IllegalArgumentException("输入错误 申请基础信息id为空!");
+            throw new NullPointerException("输入错误 申请基础信息id为空!");
         }
         ApplyDetail applyDetail = JSON.parseObject(JSON.toJSONString(detailsInfo.get("detailData")),ApplyDetail.class);
         if(applyDetail == null){
             throw new NullPointerException("输入错误 新增的数据为空!");
         }
+
+        List<ConsumableDetail> consumableDetails = consumableDetailRepository.findByConsumablesIdOrderByDateInStorage(applyDetail.getConsumablesId());
+        if(applyDetail.getApplyNum() > consumableDetails.stream().collect(summingInt(ConsumableDetail::getVirtualNum))){
+            throw new IllegalArgumentException("预申请失败 申请数量大于库存量");
+        }
+
+        List<UsingRecord> usingRecords = new ArrayList<>();
+        Integer numToSubtract = applyDetail.getApplyNum();
+        for(ConsumableDetail detail:consumableDetails){
+            if(numToSubtract > 0 && detail.getVirtualNum() >0){
+                UsingRecord usingRecord = new UsingRecord();
+                usingRecord.setApplyId(applyId);
+                usingRecord.setConsumablesDetailsId(detail.getId());
+                usingRecord.setConsumablesId(detail.getConsumablesId());
+                if(numToSubtract >= detail.getVirtualNum()){
+                    numToSubtract -= detail.getVirtualNum();
+                    detail.setVirtualNum(detail.getVirtualNum()-detail.getVirtualNum());
+                    usingRecord.setUsingNum(detail.getVirtualNum());
+                }
+                else {
+                    numToSubtract -= numToSubtract;
+                    detail.setVirtualNum(detail.getVirtualNum() - numToSubtract);
+                    usingRecord.setUsingNum(numToSubtract);
+                }
+                usingRecords.add(usingRecord);
+            }
+        }
+        usingRecordRepository.save(usingRecords);
+
         applyDetail.setApplyId(applyId);
-        applyDetail.setRemain(consumableDetailRepository.findByConsumablesId(applyDetail.getConsumablesId()).stream().collect(Collectors.summingInt(ConsumableDetail::getCurrentNum))-applyDetail.getApplyNum());
+
+//        applyDetail.setRemain(consumableDetailRepository.findByConsumablesId(applyDetail.getConsumablesId()).stream().collect(Collectors.summingInt(ConsumableDetail::getCurrentNum))-applyDetail.getApplyNum());
         applyDetailRepository.save(applyDetail);
     }
 
@@ -79,41 +113,44 @@ public class ApplyDetailService {
         if(!StringUtils.isNotNullAndEmpty(checkPerson)){
             throw new NullPointerException("输入错误 审核人为空!");
         }
+
         ApplyBase applyBase = applyBaseRepository.findOne(applyId);
-        List<ApplyDetail> applyDetails = applyDetailRepository.findByApplyId(applyId);
-        List<ConsumableDetail> consumableDetails = consumableDetailRepository.findByConsumablesIdInOrderByDateInStorage(applyDetails.stream().map(ApplyDetail::getConsumablesId).collect(toList()));
-        List<UsingRecord> usingRecords = new ArrayList<>();
-        for(ApplyDetail applyDetail:applyDetails){
-            List<ConsumableDetail> consumableDetailList = consumableDetails.stream().filter(d->d.getConsumablesId().equals(applyDetail.getConsumablesId())).collect(toList());
-            Integer numToSubtract = applyDetail.getApplyNum();
-            for(ConsumableDetail consumableDetail:consumableDetailList){
-                if(numToSubtract > 0 && consumableDetail.getCurrentNum() != 0) {
-                    UsingRecord usingRecord = new UsingRecord();
-                    usingRecord.setConsumablesId(consumableDetail.getConsumablesId());
-                    usingRecord.setConsumablesDetailsId(consumableDetail.getId());
-                    usingRecord.setApplyId(applyDetail.getApplyId());
-                    Integer currentNum = consumableDetail.getCurrentNum();
-                    if (currentNum >= numToSubtract) {
-                        consumableDetail.setCurrentNum(currentNum - numToSubtract);
-                        numToSubtract -= numToSubtract;
-                        usingRecord.setUsingNum(numToSubtract);
-                    } else {
-                        consumableDetail.setCurrentNum(currentNum - currentNum);
-                        numToSubtract -= currentNum;
-                        usingRecord.setUsingNum(currentNum);
-                    }
-                    usingRecords.add(usingRecord);
-                }
-                else {
-                    break;
-                }
-            }
-        }
+//        List<ApplyDetail> applyDetails = applyDetailRepository.findByApplyId(applyId);
+//        List<ConsumableDetail> consumableDetails = consumableDetailRepository.findByConsumablesIdInOrderByDateInStorage(applyDetails.stream().map(ApplyDetail::getConsumablesId).collect(toList()));
+//        List<UsingRecord> usingRecords = new ArrayList<>();
+//        for(ApplyDetail applyDetail:applyDetails){
+//            List<ConsumableDetail> consumableDetailList = consumableDetails.stream().filter(d->d.getConsumablesId().equals(applyDetail.getConsumablesId())).collect(toList());
+//            Integer numToSubtract = applyDetail.getApplyNum();
+//            for(ConsumableDetail consumableDetail:consumableDetailList){
+//                if(numToSubtract > 0 && consumableDetail.getCurrentNum() != 0) {
+//                    UsingRecord usingRecord = new UsingRecord();
+//                    usingRecord.setConsumablesId(consumableDetail.getConsumablesId());
+//                    usingRecord.setConsumablesDetailsId(consumableDetail.getId());
+//                    usingRecord.setApplyId(applyDetail.getApplyId());
+//                    Integer currentNum = consumableDetail.getCurrentNum();
+//                    if (currentNum >= numToSubtract) {
+//                        consumableDetail.setCurrentNum(currentNum - numToSubtract);
+//                        numToSubtract -= numToSubtract;
+//                        usingRecord.setUsingNum(numToSubtract);
+//                    } else {
+//                        consumableDetail.setCurrentNum(currentNum - currentNum);
+//                        numToSubtract -= currentNum;
+//                        usingRecord.setUsingNum(currentNum);
+//                    }
+//                    usingRecords.add(usingRecord);
+//                }
+//                else {
+//                    break;
+//                }
+//            }
+//        }
+//        consumableDetailRepository.save(consumableDetails);
+//        usingRecordRepository.save(usingRecords);
+
         applyBase.setCheckPerson(checkPerson);
         applyBase.setState("申请提交");
         applyBaseRepository.save(applyBase);
-        consumableDetailRepository.save(consumableDetails);
-        usingRecordRepository.save(usingRecords);
+
     }
 
     /**
@@ -146,13 +183,19 @@ public class ApplyDetailService {
     }
 
     @Transactional
-    public void permit(Map<String,Object> permitInfo){
-        Integer applyId = (Integer) permitInfo.get("applyId");
+    public void permit(Integer applyId){
         if(applyId == null){
             throw new NullPointerException("输入错误 申请基础信息id为空!");
         }
         ApplyBase applyBase = applyBaseRepository.findOne(applyId);
+        List<UsingRecord> usingRecords = usingRecordRepository.findByApplyId(applyId);
+        List<ConsumableDetail> consumableDetails = consumableDetailRepository.findByConsumablesIdInOrderByDateInStorage(usingRecords.stream().map(UsingRecord::getConsumablesDetailsId).collect(toList()));
+        for(UsingRecord record:usingRecords){
+            ConsumableDetail consumableDetail = consumableDetails.stream().filter(detail -> detail.getId().equals(record.getConsumablesDetailsId())).distinct().collect(toList()).get(0);
+            consumableDetail.setCurrentNum(consumableDetail.getCurrentNum()-record.getUsingNum());
+        }
         applyBase.setState("已发料");
+        consumableDetailRepository.save(consumableDetails);
         applyBaseRepository.save(applyBase);
     }
 
@@ -171,7 +214,7 @@ public class ApplyDetailService {
         List<ConsumableDetail> consumableDetails = consumableDetailRepository.findByConsumablesIdInOrderByDateInStorage(usingRecords.stream().map(UsingRecord::getConsumablesDetailsId).collect(toList()));
         for(UsingRecord record:usingRecords){
             ConsumableDetail consumableDetail = consumableDetails.stream().filter(detail -> detail.getId().equals(record.getConsumablesDetailsId())).distinct().collect(toList()).get(0);
-            consumableDetail.setCurrentNum(consumableDetail.getCurrentNum()+record.getUsingNum());
+            consumableDetail.setVirtualNum(consumableDetail.getVirtualNum()+record.getUsingNum());
         }
         applyBase.setComment(comment);
         applyBase.setState("不发料");

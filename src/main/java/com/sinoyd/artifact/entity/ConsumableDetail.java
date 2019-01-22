@@ -48,4 +48,6 @@ public class ConsumableDetail {
     private String reasonToBuy;     //购买原因
     private String location;        //储存地点
     private String remark;          //备注
+    @Column(nullable = false)
+    private Integer virtualNum;     //预申请时的库存操作数
 }

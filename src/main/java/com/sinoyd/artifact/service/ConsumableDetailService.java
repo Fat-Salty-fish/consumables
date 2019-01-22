@@ -36,16 +36,17 @@ public class ConsumableDetailService {
      * @param detailInfo
      */
     @Transactional
-    public void save(ConsumableDetail detailInfo){
+    public void save(ConsumableDetail detailInfo) {
         Integer consumablesId = detailInfo.getConsumablesId();
-        if(consumablesId == null){
+        if (consumablesId == null) {
             throw new IllegalArgumentException("输入错误 必须输入消耗品id");
         }
         ConsumableBase baseInfo = consumableBaseRepository.findOne(detailInfo.getConsumablesId());
-        if(baseInfo==null){
+        if (baseInfo == null) {
             throw new IllegalArgumentException("输入错误 必须输入消耗品id");
         }
         detailInfo.setCurrentNum(detailInfo.getInsertNum());
+        detailInfo.setVirtualNum(detailInfo.getInsertNum());
         consumableDetailRepository.save(detailInfo);
     }
 

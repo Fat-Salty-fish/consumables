@@ -13,4 +13,5 @@ import java.util.List;
 public interface ConsumableDetailRepository extends CrudRepository<ConsumableDetail,Integer> {
     List<ConsumableDetail> findByConsumablesIdInOrderByDateInStorage(Collection<Integer> ids);
     List<ConsumableDetail> findByConsumablesId(Integer id);
+    List<ConsumableDetail> findByConsumablesIdOrderByDateInStorage(Integer id);
 }

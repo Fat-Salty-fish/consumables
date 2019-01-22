@@ -52,8 +52,8 @@ public class ApplyDetailController extends BaseController {
     }
 
     @PutMapping("/permit")
-    public Object permit(@RequestBody Map<String,Object> permitInfo){
-        applyDetailService.permit(permitInfo);
+    public Object permit(@RequestParam("applyId")Integer applyId){
+        applyDetailService.permit(applyId);
         return ResultBean.success();
     }
 
@@ -69,6 +69,6 @@ public class ApplyDetailController extends BaseController {
         return ResultBean.success();
     }
 
-    @DeleteMapping("")
-    public Object delete
+//    @DeleteMapping("")
+//    public Object delete
 }
