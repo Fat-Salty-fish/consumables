@@ -26,4 +26,5 @@ public class ApplyDetail {
     private Integer applyNum;               //领用的数量
     private String purpose;                 //领用目的
     private String remark;                  //备注
+    private Integer remain;                 //剩余数量
 }

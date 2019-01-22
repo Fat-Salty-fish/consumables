@@ -8,7 +8,6 @@ import com.sinoyd.frame.base.controller.BaseController;
 import com.sinoyd.frame.base.util.PageBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.text.ParseException;
 import java.util.Collection;
 
@@ -41,7 +40,6 @@ public class ApplyBaseController extends BaseController {
      * @param startDate    查询开始时间 可选填
      * @param endDate      查询结束时间 可选填
      * @return
-     * @throws ParseException
      */
     @GetMapping("")
     public Object findByPage(@RequestParam(name = "applyPerson",required = false)String applyPerson,
@@ -74,6 +72,11 @@ public class ApplyBaseController extends BaseController {
         return ResultBean.success(applyBaseService.delete(ids));
     }
 
+    /**
+     * 修改申请基础信息
+     * @param baseInfo 要修改的申请基础信息内容对象
+     * @return
+     */
     @PutMapping("")
     public Object update(@RequestBody ApplyBase baseInfo){
         applyBaseService.update(baseInfo);

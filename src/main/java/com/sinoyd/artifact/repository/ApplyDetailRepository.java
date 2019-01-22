@@ -4,6 +4,7 @@ import com.sinoyd.artifact.entity.ApplyDetail;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Collection;
+import java.util.List;
 
 /**
  * @Description
@@ -12,4 +13,6 @@ import java.util.Collection;
  */
 public interface ApplyDetailRepository extends CrudRepository<ApplyDetail,Integer> {
     Integer deleteAllByApplyIdIn(Collection<Integer> ids);
+    List<ApplyDetail> findByApplyId(Integer id);
+    Integer deleteByIdIn(Collection<Integer> ids);
 }

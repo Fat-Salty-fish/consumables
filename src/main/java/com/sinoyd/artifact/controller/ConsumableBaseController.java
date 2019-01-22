@@ -1,21 +1,14 @@
 package com.sinoyd.artifact.controller;
 
-import com.mysql.jdbc.exceptions.MySQLIntegrityConstraintViolationException;
-import com.sinoyd.artifact.criteria.ConsumableBaseInfoAndStorageViewCriteria;
+import com.sinoyd.artifact.criteria.StoreViewCriteria;
 import com.sinoyd.artifact.entity.ConsumableBase;
 import com.sinoyd.artifact.result.ResultBean;
 import com.sinoyd.artifact.service.ConsumableBaseService;
 import com.sinoyd.frame.base.controller.BaseController;
-import com.sinoyd.frame.base.repository.CommonRepository;
 import com.sinoyd.frame.base.util.PageBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import com.sinoyd.artifact.result.ResultBean;
-
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 
 /**
  * @Description
@@ -31,7 +24,7 @@ public class ConsumableBaseController extends BaseController{
     /**
      * 新增消耗品基础信息
      * @param baseInfo 消耗品信息
-     * @return 返回插入成功 不反悔消耗品信息数据 为插入成功
+     * @return 返回插入成功 不返回消耗品信息数据 为插入成功
      */
     @PostMapping("")
     public Object create(@RequestBody ConsumableBase baseInfo){
@@ -40,12 +33,12 @@ public class ConsumableBaseController extends BaseController{
     }
 
     /**
-     * 消耗品基础信息分页搜索
+     * 消耗品基础信息分页搜索 使用视图展示 包括现有库存信息等
      * @param criteria 查询信息
      * @return 返回查询结果
      */
     @GetMapping("")
-    public Object findByPage(ConsumableBaseInfoAndStorageViewCriteria criteria){
+    public Object findByPage(StoreViewCriteria criteria){
         PageBean pageBean = super.getPageBean();
         consumableBaseService.findByPage(pageBean,criteria);
         return super.setJsonPaginationMap(pageBean);

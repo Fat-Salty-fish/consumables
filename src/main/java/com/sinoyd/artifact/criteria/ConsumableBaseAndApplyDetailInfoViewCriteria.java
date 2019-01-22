@@ -8,25 +8,21 @@ import lombok.Setter;
 /**
  * @Description
  * @auther 李忠杰
- * @create 2019-01-16 14:29
+ * @create 2019-01-21 17:24
  */
-@Setter
 @Getter
-public class ConsumableBaseInfoAndStorageViewCriteria extends BaseCriteria {
-    private String name;
+@Setter
+public class ConsumableBaseAndApplyDetailInfoViewCriteria extends BaseCriteria {
+    private Integer applyId;
 
     @Override
     public String getCondition() {
         values.clear();
         StringBuilder condition = new StringBuilder();
-        if(StringUtils.isNotNullAndEmpty(this.name)){
-            condition.append("and name like :name");
-            values.put("name", "%" + this.name + "%");
+        if(StringUtils.isNotNullAndEmpty(this.applyId)){
+            condition.append(" and applyId = :applyId ");
+            values.put("applyId",this.applyId);
         }
         return condition.toString();
-    }
-
-    public String getName(){
-        return this.name;
     }
 }

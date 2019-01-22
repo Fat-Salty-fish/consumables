@@ -23,10 +23,9 @@ public class UsingRecord {
     @Column(nullable = false)
     private Integer consumablesId;
     @Column(nullable = false)
-    private Integer detailsId;
-    @Column(nullable = false)
-    @JsonFormat(pattern = "yyyy-MM-dd")
-    private Date dateToUsing;
+    private Integer consumablesDetailsId;
     @Column(nullable = false)
     private Integer usingNum;
+    @Column(nullable = false)
+    private Integer applyId;
 }
