@@ -3,17 +3,40 @@
   <component name="ChangeListManager">
     <list default="true" id="a8875cbc-1d99-4f43-80d3-0933d6cd7c88" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ApplyBaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ApplyBaseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ApplyDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ApplyDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ConsumableBaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ConsumableBaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ConsumableDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ConsumableDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ExceptionHandlerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ExceptionHandlerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/AddingRecordViewCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/AddingRecordViewCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ApplyBaseInfoCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ApplyBaseInfoCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableBaseAndApplyDetailInfoViewCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableBaseAndApplyDetailInfoViewCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableBaseAndDetailInfoViewCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableBaseAndDetailInfoViewCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/StoreViewCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/StoreViewCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/UsingRecordViewCriteria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/UsingRecordViewCriteria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ApplyBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ApplyBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ApplyDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ApplyDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ConsumableBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ConsumableBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ConsumableDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ConsumableDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/UsingRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/UsingRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ApplyBaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ApplyBaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ApplyDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ApplyDetailRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ConsumableBaseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ConsumableBaseRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ConsumableDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ConsumableDetailRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/UsingRecordRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/UsingRecordRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/result/ResultBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/result/ResultBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ApplyBaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ApplyBaseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ApplyDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ApplyDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ConsumableBaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ConsumableBaseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ConsumableDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ConsumableDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/consumables.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumableBaseAndApplyDetailInfoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumableBaseAndApplyDetailInfoView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumableBaseAndDetailInfoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumableBaseAndDetailInfoView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/StoreView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/StoreView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/UsingRecordView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/UsingRecordView.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,37 +44,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ApplyDetailService.java" pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ApplyDetailService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+            <state relative-caret-position="300">
+              <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#findByPage#0;class#ApplyDetailService#0" />
+                <element signature="method#submit#0;class#ApplyDetailService#0" />
                 <element signature="method#review#0;class#ApplyDetailService#0" />
-                <element signature="method#permit#0;class#ApplyDetailService#0" />
-                <element signature="method#update#0;class#ApplyDetailService#0" />
-                <element signature="method#delete#0;class#ApplyDetailService#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UsingRecord.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/UsingRecord.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ConsumableBaseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+            <state relative-caret-position="120">
+              <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#findById#0;class#ConsumableBaseService#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConsumableDetailRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ConsumableDetailRepository.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/StoreView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="285">
+              <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,13 +83,39 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApplyDetail.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ApplyDetail.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ApplyBaseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+            <state relative-caret-position="322">
+              <caret line="66" column="15" lean-forward="true" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ApplyBaseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ApplyDetailController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="54" column="7" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#review#0;class#ApplyDetailController#0" />
+                <element signature="method#permit#0;class#ApplyDetailController#0" />
               </folding>
             </state>
           </provider>
@@ -78,8 +128,16 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>map</find>
+      <find>detailsInfo</find>
+      <find>deleteInfo</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -87,8 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/result/ResultBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumablesBaseView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/testView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumableBaseView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumableBaseAndStoreView.java" />
@@ -96,56 +152,52 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/viewTestRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableBaseCriteria.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableBaseInfoAndStorageViewCriteria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ConsumableBaseRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableDetailInfoCriteria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ConsumableBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumableBaseInfoAndStorageView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ApplyBaseRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableBaseAndDetailInfoCriteria.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableBaseAndDetailInfoCriteriaView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ApplyBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ViewRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumableBaseAndDetailInfoView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ApplyBaseService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/StorageRepository.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/Store.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/Storage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ApplyBaseInfoCriteria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ConsumableBaseService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/StoreView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ApplyDetailCriteria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ExceptionHandlerController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumableBaseAndApplyDetailInfoView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ApplyDetailInfoCriteria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableBaseAndApplyDetailInfoViewCriteria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/UsingRecord.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/UsingRecordRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ApplyDetailRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ApplyBaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableDetailInfoCriteria.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ConsumableDetailController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ConsumableBaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ApplyBaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ExceptionHandlerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableBaseAndDetailInfoViewCriteria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/StoreViewCriteria.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/UsingRecordViewCriteria.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ApplyDetail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ConsumableBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/UsingRecord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ApplyBaseRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ApplyDetailRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ConsumableBaseRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ConsumableDetailRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/UsingRecordRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/result/ResultBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumableBaseAndDetailInfoView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/UsingRecordView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/AddingRecordViewCriteria.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ConsumableDetailController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ConsumableDetail.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ApplyDetailController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ConsumableDetailService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ConsumableDetailRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ConsumableDetail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/StoreViewCriteria.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumableBaseAndApplyDetailInfoView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/EnumTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableBaseAndApplyDetailInfoViewCriteria.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ApplyDetailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ApplyBaseInfoCriteria.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ApplyBase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ApplyBaseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ConsumableBaseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/StoreView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ApplyDetailController.java" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -170,10 +222,7 @@
       <select />
     </treeState>
   </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="100" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -218,15 +267,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="consumables" type="b2602c69:ProjectViewProjectNode" />
-              <item name="consumables" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="sinoyd" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -235,7 +275,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="sinoyd" type="462c0819:PsiDirectoryNode" />
               <item name="artifact" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -245,7 +284,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="sinoyd" type="462c0819:PsiDirectoryNode" />
               <item name="artifact" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
@@ -256,7 +294,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="sinoyd" type="462c0819:PsiDirectoryNode" />
               <item name="artifact" type="462c0819:PsiDirectoryNode" />
               <item name="criteria" type="462c0819:PsiDirectoryNode" />
@@ -267,7 +304,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="sinoyd" type="462c0819:PsiDirectoryNode" />
               <item name="artifact" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
@@ -278,7 +314,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="sinoyd" type="462c0819:PsiDirectoryNode" />
               <item name="artifact" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
@@ -289,7 +324,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="sinoyd" type="462c0819:PsiDirectoryNode" />
               <item name="artifact" type="462c0819:PsiDirectoryNode" />
               <item name="result" type="462c0819:PsiDirectoryNode" />
@@ -300,7 +334,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="sinoyd" type="462c0819:PsiDirectoryNode" />
               <item name="artifact" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
@@ -311,7 +344,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="sinoyd" type="462c0819:PsiDirectoryNode" />
               <item name="artifact" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
@@ -327,9 +359,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -341,14 +372,17 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548147964236" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548386528511" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/sinoyd/artifact" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -373,11 +407,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.ArtifactApplication">
+    <configuration name="EnumTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sinoyd.artifact.entity.EnumTest" />
+      <module name="consumables" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sinoyd.artifact.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ArtifactApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="consumables" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sinoyd.ArtifactApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EnumTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -396,11 +451,13 @@
       <workItem from="1547684939048" duration="49578000" />
       <workItem from="1548030391624" duration="48877000" />
       <workItem from="1548160196661" duration="8863000" />
+      <workItem from="1548203390824" duration="28844000" />
+      <workItem from="1548290969812" duration="15107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152960000" />
+    <option name="totallyTimeSpent" value="196911000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -412,92 +469,49 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" weight="0.21983914" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2622108" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34051144" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.329429" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.329429" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18155198" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33378196" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36473754" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329429" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28351206" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.10089974" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.329429" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.10089974" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Maven Projects" order="10" weight="0.21983914" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="4" />
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sinoyd/core/0.0.7-SNAPSHOT/core-0.0.7-20180531.065008-3.jar!/com/sinoyd/frame/base/repository/impl/CommonRepositoryImpl.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sinoyd/core/0.0.7-SNAPSHOT/core-0.0.7-20180531.065008-3.jar!/com/sinoyd/frame/base/util/PageBean.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/StorageService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/StorageRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/Storage.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ConsumableBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableBaseInfoAndStorageViewCriteria.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ConsumableBaseRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sinoyd/core/0.0.7-SNAPSHOT/core-0.0.7-20180531.065008-3.jar!/com/sinoyd/frame/base/util/BaseCriteria.class" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.13.RELEASE/spring-aop-4.3.13.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="521" selection-start-line="521" selection-end-line="521" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="125" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.13.RELEASE/spring-webmvc-4.3.13.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -509,17 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="530" selection-start-line="530" selection-end-line="530" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sinoyd/core/0.0.7-SNAPSHOT/core-0.0.7-20180531.065008-3.jar!/com/sinoyd/frame/base/repository/CommonRepository.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ApplyBaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-723">
-          <caret line="54" column="14" lean-forward="true" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -537,25 +540,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumableBaseInfoAndStorageView.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ConsumableBaseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="58" column="38" selection-start-line="58" selection-start-column="38" selection-end-line="58" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#findById#0;class#ConsumableBaseService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.9.RELEASE/spring-boot-autoconfigure-1.5.9.RELEASE.jar!/org/springframework/boot/autoconfigure/orm/jpa/JpaBaseConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
@@ -563,229 +548,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableDetailInfoCriteria.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/StoreView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumableBaseAndDetailInfoView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ExceptionHandlerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/sinoyd/core/0.0.7-SNAPSHOT/core-0.0.7-20180531.065008-3.jar!/com/sinoyd/frame/base/util/StringUtils.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/UsingRecordService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/UsingRecordRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumableBaseAndApplyDetailInfoView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ApplyDetailRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/result/ResultBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ApplyDetailInfoCriteria.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/UsingRecordView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableBaseAndApplyDetailInfoViewCriteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ApplyBaseInfoCriteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableBaseAndDetailInfoViewCriteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/StoreViewCriteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/UsingRecordViewCriteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/AddingRecordViewCriteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ApplyBaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#create#0;class#ApplyBaseController#0" />
-            <element signature="method#findByPage#0;class#ApplyBaseController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/ArtifactApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ConsumableDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="43" column="29" lean-forward="true" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ApplyDetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ConsumableBaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="68" column="34" lean-forward="true" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#create#0;class#ConsumableBaseController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ConsumableDetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ConsumableDetailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ApplyDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ConsumableDetailRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/UsingRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="25" column="41" lean-forward="true" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -796,17 +564,391 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ApplyDetailService.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+        <state relative-caret-position="144">
+          <caret line="1232" column="6" selection-start-line="1232" selection-start-column="6" selection-end-line="1232" selection-end-column="6" />
+          <folding>
+            <element signature="e#47036#47037#0" expanded="true" />
+            <element signature="e#47092#47093#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="1251" column="9" selection-start-line="1251" selection-start-column="9" selection-end-line="1251" selection-end-column="9" />
+          <folding>
+            <element signature="e#49043#49044#0" expanded="true" />
+            <element signature="e#49082#49083#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableDetailInfoCriteria.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sinoyd/core/0.0.7-SNAPSHOT/core-0.0.7-20180531.065008-3.jar!/com/sinoyd/frame/base/controller/BaseController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/1.13.9.RELEASE/spring-data-commons-1.13.9.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ExceptionHandlerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-649">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#findByPage#0;class#ApplyDetailService#0" />
+            <element signature="e#740#741#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#1212#1213#0" expanded="true" />
+            <element signature="e#1270#1271#0" expanded="true" />
+            <element signature="e#1364#1365#0" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/AddingRecordViewCriteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sinoyd/core/0.0.7-SNAPSHOT/core-0.0.7-20180531.065008-3.jar!/com/sinoyd/frame/base/util/PageBean.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ConsumableBaseRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="12" column="90" selection-start-line="12" selection-start-column="90" selection-end-line="12" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sinoyd/core/0.0.7-SNAPSHOT/core-0.0.7-20180531.065008-3.jar!/com/sinoyd/frame/base/util/StringUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+          <folding>
+            <element signature="e#2014#2015#0" expanded="true" />
+            <element signature="e#2085#2086#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="234" column="26" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="26" />
+          <folding>
+            <element signature="e#10065#10066#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/EnumTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-210">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ApplyBaseRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ConsumableDetailRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/UsingRecordRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/result/ResultBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-177">
+          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/repository/ApplyDetailRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ConsumableDetailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="44" column="74" lean-forward="true" selection-start-line="44" selection-start-column="74" selection-end-line="44" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ConsumableBaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sinoyd/core/0.0.7-SNAPSHOT/core-0.0.7-20180531.065008-3.jar!/com/sinoyd/frame/base/repository/CommonRepository.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ApplyBaseInfoCriteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1048">
+          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableBaseAndApplyDetailInfoViewCriteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-44">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/ConsumableBaseAndDetailInfoViewCriteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/StoreViewCriteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/criteria/UsingRecordViewCriteria.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ApplyBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ApplyDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ConsumableBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumableBaseAndDetailInfoView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ConsumableDetailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="52" column="23" lean-forward="true" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/UsingRecordView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/UsingRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/entity/ConsumableDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="38" column="57" lean-forward="true" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/ConsumableBaseAndApplyDetailInfoView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ApplyDetailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="84" column="38" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#submit#0;class#ApplyDetailService#0" />
             <element signature="method#review#0;class#ApplyDetailService#0" />
-            <element signature="method#permit#0;class#ApplyDetailService#0" />
-            <element signature="method#update#0;class#ApplyDetailService#0" />
-            <element signature="method#delete#0;class#ApplyDetailService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ConsumableBaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#findById#0;class#ConsumableBaseService#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/view/StoreView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="43" column="1" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/service/ApplyBaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="66" column="15" lean-forward="true" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ApplyBaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sinoyd/artifact/controller/ApplyDetailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="54" column="7" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#review#0;class#ApplyDetailController#0" />
+            <element signature="method#permit#0;class#ApplyDetailController#0" />
           </folding>
         </state>
       </provider>

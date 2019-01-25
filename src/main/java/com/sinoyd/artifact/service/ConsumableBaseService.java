@@ -8,6 +8,7 @@ import com.sinoyd.frame.base.util.BaseCriteria;
 import com.sinoyd.frame.base.util.PageBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import javax.transaction.Transactional;
 import java.util.Collection;
 import java.util.List;
@@ -30,20 +31,20 @@ public class ConsumableBaseService {
      * @param baseInfo 要新增的基础信息
      */
     public void save(ConsumableBase baseInfo) {
-        if(baseInfo.getWarningNum() >= 0){
+        if (baseInfo.getWarningNum() >= 0) {
             consumableBaseRepository.save(baseInfo);
-        }
-        else {
+        } else {
             throw new IllegalArgumentException("输入错误 输入小于0的警告数量");
         }
     }
 
     /**
      * 根据id获取一条消耗品基础信息
+     *
      * @param id
      * @return
      */
-    public ConsumableBase findById(Integer id){
+    public ConsumableBase findById(Integer id) {
         if (id == null) {
             throw new IllegalArgumentException("输入错误 输入的消耗品id为空");
         }
@@ -59,9 +60,12 @@ public class ConsumableBaseService {
     public void findByPage(PageBean pageBean, BaseCriteria storeViewCriteria) {
         pageBean.setEntityName("StoreView a");
         pageBean.setSelect("Select a");
-        commonRepository.findByPage(pageBean,storeViewCriteria);
+        commonRepository.findByPage(pageBean, storeViewCriteria);
+
+
         List<StoreView> viewList = pageBean.getData();
-        viewList.stream().forEach(item->item.setIsLessThan());
+
+        viewList.forEach(StoreView::setIsLessThan);
     }
 
     /**

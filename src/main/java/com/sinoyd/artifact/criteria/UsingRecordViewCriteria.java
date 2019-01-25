@@ -4,6 +4,8 @@ import com.sinoyd.frame.base.util.BaseCriteria;
 import com.sinoyd.frame.base.util.StringUtils;
 import lombok.Getter;
 import lombok.Setter;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @Description 用来展示在消耗品管理界面右方的消耗品领用信息的数据分页搜索类
@@ -19,10 +21,15 @@ public class UsingRecordViewCriteria extends BaseCriteria {
     public String getCondition() {
         values.clear();
         StringBuilder condition = new StringBuilder();
-        if(StringUtils.isNotNullAndEmpty(this.consumablesId)){
+        if (StringUtils.isNotNullAndEmpty(this.consumablesId)) {
             condition.append(" and consumablesId = :consumablesId");
-            values.put("consumablesId",this.consumablesId);
+            values.put("consumablesId", this.consumablesId);
         }
+        List<String> states = new ArrayList<>();
+        states.add("已发料");
+        states.add("已领料");
+        condition.append(" and state in :state");
+        values.put("state", states);
         return condition.toString();
     }
 }

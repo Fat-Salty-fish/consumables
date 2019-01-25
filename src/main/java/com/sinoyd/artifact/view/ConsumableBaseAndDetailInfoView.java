@@ -26,6 +26,6 @@ public class ConsumableBaseAndDetailInfoView {
     private Integer currentNum;
     private String manufacturer;
     private String batchNumber;
-    @JsonFormat(pattern = "yyyy-MM-dd",timezone = "GMT+8")
+    @JsonFormat(pattern = "yyyy-MM-dd", timezone = "GMT+8")
     private Date validity;
 }

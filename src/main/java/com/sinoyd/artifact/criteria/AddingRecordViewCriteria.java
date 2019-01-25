@@ -1,6 +1,7 @@
 package com.sinoyd.artifact.criteria;
 
 import com.sinoyd.frame.base.util.BaseCriteria;
+import com.sinoyd.frame.base.util.StringUtils;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,9 +13,16 @@ import lombok.Setter;
 @Setter
 @Getter
 public class AddingRecordViewCriteria extends BaseCriteria {
+    private Integer consumablesId;
 
     @Override
     public String getCondition() {
-        return null;
+        values.clear();
+        StringBuilder condition = new StringBuilder();
+        if (consumablesId != null) {
+            condition.append(" and consumablesId = :consumablesId ");
+            values.put("consumablesId", this.consumablesId);
+        }
+        return condition.toString();
     }
 }

@@ -19,9 +19,9 @@ public class ConsumableBaseAndApplyDetailInfoViewCriteria extends BaseCriteria {
     public String getCondition() {
         values.clear();
         StringBuilder condition = new StringBuilder();
-        if(StringUtils.isNotNullAndEmpty(this.applyId)){
+        if (this.applyId != null) {
             condition.append(" and applyId = :applyId ");
-            values.put("applyId",this.applyId);
+            values.put("applyId", this.applyId);
         }
         return condition.toString();
     }

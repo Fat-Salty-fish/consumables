@@ -11,8 +11,10 @@ import java.util.List;
  * @auther 李忠杰
  * @create 2019-01-15 14:06
  */
-public interface ApplyDetailRepository extends CrudRepository<ApplyDetail,Integer> {
-    Integer deleteAllByApplyIdIn(Collection<Integer> ids);
+public interface ApplyDetailRepository extends CrudRepository<ApplyDetail, Integer> {
     List<ApplyDetail> findByApplyId(Integer id);
+
+    List<ApplyDetail> findByIdIn(Collection<Integer> ids);
+
     Integer deleteByIdIn(Collection<Integer> ids);
 }

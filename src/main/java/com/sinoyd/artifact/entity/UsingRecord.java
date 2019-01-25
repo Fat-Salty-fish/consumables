@@ -1,11 +1,8 @@
 package com.sinoyd.artifact.entity;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Getter;
 import lombok.Setter;
-
 import javax.persistence.*;
-import java.util.Date;
 
 /**
  * @Description

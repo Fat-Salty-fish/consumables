@@ -10,7 +10,8 @@ import java.util.List;
  * @auther 李忠杰
  * @create 2019-01-15 14:09
  */
-public interface UsingRecordRepository extends CrudRepository<UsingRecord,Integer> {
+public interface UsingRecordRepository extends CrudRepository<UsingRecord, Integer> {
     List<UsingRecord> findByApplyId(Integer applyId);
+
     Integer deleteAllByApplyId(Integer applyId);
 }

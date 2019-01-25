@@ -36,15 +36,9 @@ public class StoreView {
     private Integer store;
 
     @Transient
-    private Integer isLessThan;
+    private Integer isLessThan = (this.getStore() != null ? (this.getStore() <= this.getWarningNum() ? 1 : 0) : 3);
 
-    public void setIsLessThan(){
-        if(this.store != null) {
-            if (this.store <= this.warningNum) {
-                this.isLessThan = 1;
-            } else {
-                this.isLessThan = 0;
-            }
-        }
+    public void setIsLessThan() {
+        this.isLessThan = (this.getStore() != null ? (this.getStore() <= this.getWarningNum() ? 1 : 0) : 3);
     }
 }

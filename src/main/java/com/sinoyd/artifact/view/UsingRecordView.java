@@ -2,8 +2,10 @@ package com.sinoyd.artifact.view;
 
 import lombok.Getter;
 import lombok.Setter;
+
 import javax.persistence.*;
 import java.util.Date;
+
 /**
  * @Description
  * @auther 李忠杰
@@ -23,4 +25,5 @@ public class UsingRecordView {
     private Integer applyNum;
     private String remark;
     private Integer remain;
+    private String state;
 }

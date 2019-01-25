@@ -19,24 +19,24 @@ public class ResultBean<T> {
     private String message;
     private Collection<T> data;
 
-    public ResultBean(){
+    public ResultBean() {
     }
 
-    public static ResultBean error(Integer code,String message){
+    public static ResultBean error(Integer code, String message) {
         ResultBean resultBean = new ResultBean();
         resultBean.setCode(code);
         resultBean.setMessage(message);
         return resultBean;
     }
 
-    public static ResultBean success(){
+    public static ResultBean success() {
         ResultBean resultBean = new ResultBean();
         resultBean.setCode(0);
         resultBean.setMessage("success");
         return resultBean;
     }
 
-    public static <T> ResultBean<T> success(Collection<T> data){
+    public static <T> ResultBean<T> success(Collection<T> data) {
         ResultBean resultBean = new ResultBean();
         resultBean.setCode(0);
         resultBean.setMessage("success");
@@ -44,11 +44,11 @@ public class ResultBean<T> {
         return resultBean;
     }
 
-    public static <T> ResultBean<T> success(T data){
+    public static <T> ResultBean<T> success(T data) {
         ResultBean resultBean = new ResultBean();
         resultBean.setCode(0);
         resultBean.setMessage("success");
-        if(data==null){
+        if (data == null) {
             return resultBean;
         }
         Collection<T> list = new ArrayList<>();

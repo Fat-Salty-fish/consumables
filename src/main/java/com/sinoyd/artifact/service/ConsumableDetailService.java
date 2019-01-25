@@ -1,7 +1,5 @@
 package com.sinoyd.artifact.service;
 
-import com.sinoyd.artifact.criteria.ConsumableBaseAndDetailInfoViewCriteria;
-import com.sinoyd.artifact.criteria.UsingRecordViewCriteria;
 import com.sinoyd.artifact.entity.ConsumableBase;
 import com.sinoyd.artifact.entity.ConsumableDetail;
 import com.sinoyd.artifact.repository.ConsumableBaseRepository;
@@ -11,6 +9,7 @@ import com.sinoyd.frame.base.util.BaseCriteria;
 import com.sinoyd.frame.base.util.PageBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import javax.transaction.Transactional;
 
 
@@ -52,18 +51,25 @@ public class ConsumableDetailService {
 
     /**
      * 消耗品详细信息分页搜索和模糊搜索
+     *
      * @param pageBean
      * @param consumableBaseAndDetailInfoViewCriteria
      */
-    public void findByPage(PageBean pageBean, BaseCriteria consumableBaseAndDetailInfoViewCriteria){
-        pageBean.setEntityName("ConsumableBaseAndDetailInfoView a");
+    public void findByPage(PageBean pageBean, BaseCriteria consumableBaseAndDetailInfoViewCriteria) {
+        pageBean.setEntityName("ConsumableBaseAndDetailInfoView a ");
         pageBean.setSelect("Select a");
-        commonRepository.findByPage(pageBean,consumableBaseAndDetailInfoViewCriteria);
+        commonRepository.findByPage(pageBean, consumableBaseAndDetailInfoViewCriteria);
     }
 
-    public void findUsingRecord(PageBean pageBean, BaseCriteria usingRecordViewCriteria){
+    public void findUsingRecord(PageBean pageBean, BaseCriteria usingRecordViewCriteria) {
         pageBean.setEntityName("UsingRecordView a ");
         pageBean.setSelect("Select a ");
-        commonRepository.findByPage(pageBean,usingRecordViewCriteria);
+        commonRepository.findByPage(pageBean, usingRecordViewCriteria);
+    }
+
+    public void findAddingRecord(PageBean pageBean, BaseCriteria addingRecordViewCriteria) {
+        pageBean.setEntityName("ConsumableDetail a ");
+        pageBean.setSelect("Select a ");
+        commonRepository.findByPage(pageBean, addingRecordViewCriteria);
     }
 }

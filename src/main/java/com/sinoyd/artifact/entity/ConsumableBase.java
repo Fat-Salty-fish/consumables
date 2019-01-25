@@ -2,7 +2,6 @@ package com.sinoyd.artifact.entity;
 
 import lombok.Getter;
 import lombok.Setter;
-
 import javax.persistence.*;
 
 /**

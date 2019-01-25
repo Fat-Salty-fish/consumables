@@ -28,4 +28,6 @@ public class ConsumableBaseAndApplyDetailInfoView {
     private Integer applyId;
     private Integer applyNum;
     private Integer consumablesId;
+    private String purpose;
+    private String remark;
 }

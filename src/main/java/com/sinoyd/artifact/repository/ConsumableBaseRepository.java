@@ -10,7 +10,8 @@ import java.util.Collection;
  * @auther 李忠杰
  * @create 2019-01-15 14:06
  */
-public interface ConsumableBaseRepository extends JpaRepository<ConsumableBase,Integer> {
+public interface ConsumableBaseRepository extends JpaRepository<ConsumableBase, Integer> {
     Integer deleteAllByIdIn(Collection<Integer> ids);
+
     Integer countById(Integer id);
 }
